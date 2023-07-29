@@ -1,3 +1,7 @@
+import Pieces.Pawn;
+import Pieces.Pieces;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +23,24 @@ public class Main {
         Player Player2 = new Player();
         Player2.setUserInformation("Black",name);
         Player2.printUserInfo();
+
+
+        Player1.printUserInfo();
+
+
+        System.out.println("Available pieces for White player:");
+        List<Pieces> whitePieces = Player1.getPieces();
+        for (Pieces piece : whitePieces) {
+            System.out.println(piece.getClass().getSimpleName());
+            System.out.println(piece.getColor());
+        }
+
+        System.out.println("Available pieces for Black player:");
+        List<Pieces> blackPieces = Player2.getPieces();
+        for (Pieces piece : blackPieces) {
+            System.out.println(piece.getClass().getSimpleName());
+            System.out.println(piece.getColor());
+        }
 
 
         Board.initializeBoard(board);
