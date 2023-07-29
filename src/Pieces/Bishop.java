@@ -1,6 +1,10 @@
 package Pieces;
 
 public class Bishop extends Pieces{
+
+    private int X;
+    private int Y;
+
     public Bishop(String color) {
         super(color);
     }

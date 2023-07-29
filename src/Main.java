@@ -43,8 +43,8 @@ public class Main {
         }
 
 
-        Board.initializeBoard(board);
-        Board.displayBoard(board);
+        Board chessBoard = new Board();
+        chessBoard.ChessBoard(Player1, Player2);
 
 
     }

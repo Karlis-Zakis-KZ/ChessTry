@@ -1,6 +1,10 @@
 package Pieces;
 
 public class Pawn extends Pieces {
+
+    private int X;
+    private int Y;
+
     public Pawn(String color) {
         super(color);
     }
